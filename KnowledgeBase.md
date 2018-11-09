@@ -13,6 +13,8 @@ Hub should be run in a closed network protected from malicious actors
 
 Hub components include:  Hub server, Signing server, Maria Database, and APIs (?)
 
+![](images/components.jgp?raw=true)
+
 #### Interacting with Hub 
 
 Users need tokens to interact with Hub
