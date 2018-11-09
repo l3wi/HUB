@@ -57,9 +57,6 @@ Hub confirms sweep transactions were accepted by Tangle. To ensure secure deposi
  
 Withdrawls
 Additionally, Hub manages withdrawals.  Customers withdraw funds from exchanges for various reasons. The exchange must make sure that deposit addresses used to transfer tokens do not have pending incoming transactions as a strict measure to prevent private key reuse.  Hub ensures that no value is being transferred to a deposit address.  Hub also makes sure that all previous incoming transactions are confirmed before sending a transfer.  Hub monitors withdrawal transactions and notifies users once withdrawal transaction has been confirmed.
- 
-Reattachments
-Hub also monitors reattachment as needed.  Reattaching a transaction is simply doing the proof of work and tip selection process to reattach the transaction to a different part of the Tangle.  Hub will reattach once every 30 minutes that a transaction remains pending.  If still pending after 5 reattachments then Hub will verify that the transaction wasn’t double spent.  Chances of confirmation are significantly increased with each reattachment.
 
 ### Hub Limitations
 
