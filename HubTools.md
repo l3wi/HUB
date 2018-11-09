@@ -1,16 +1,12 @@
 ## Hub Tools
 
-### Confirming User Deposits
+### Independent Confirmation of User Deposits
 
 Independent confirmation of deposits may be helpful for analysis or problem solving.  Here are three ways to check whether a deposit was confirmed:
 
 **via getBalances**
 
-Check the balance of an address using the getBalances API call. 
-
-Prerequisite:  unique deposit address for each individual user
-
-Continuously call getBalances with the deposit address to determine whether an address has a confirmed balance or not.
+Check the balance of an address using the getBalances API call.  Continuously call getBalances with the deposit address to determine whether an address has a confirmed balance.
 
 **via findTransactions**
 
