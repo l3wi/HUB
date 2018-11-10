@@ -68,7 +68,7 @@ Sample Output:
 Withdrawal transactions can be monitored and users notified when a withdrawal transaction has been confirmed. The following example utilizes getLatestInclusion() to check for confirmed transactions.
 
 JavaScript
-
+```
 const IOTA = require("iota.lib.js")
 const iota = new IOTA({provider: "https://nodes.testnet.iota.org:443"})
 const remoteCurl = require('@iota/curl-remote')
@@ -90,10 +90,11 @@ if (err) {
         }
 })
 })
+```
 
+** Withdrawal transaction with tail hash **
+```TAOIAXACMCWFYETKBHOTHNLNAZOWFORNAOKH9EIXVESLWBULGBKYRKUJLAQPKKNLISL9UHOXQESNLO999 confirmed```
 
-Withdrawal transaction with tail hash:
-TAOIAXACMCWFYETKBHOTHNLNAZOWFORNAOKH9EIXVESLWBULGBKYRKUJLAQPKKNLISL9UHOXQESNLO999 confirmed
 
 Screen Capture showing the confirmed bundle
 
