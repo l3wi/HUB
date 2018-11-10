@@ -94,4 +94,5 @@ if (err) {
 Withdrawal transaction with tail hash:
 TAOIAXACMCWFYETKBHOTHNLNAZOWFORNAOKH9EIXVESLWBULGBKYRKUJLAQPKKNLISL9UHOXQESNLO999 confirmed
 
+![](images/TXconfirm.png?raw=true)
 Screen Capture showing the confirmed bundle
