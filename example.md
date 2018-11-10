@@ -78,13 +78,13 @@ Now, IOTA Hub takes over and automatically sweeps funds into exchange deposit ad
 
 Query IOTA Hub to view the new username, “Nelson”, and see the account balance of 50i.  Notice, Nelson’s ID is “9”.
 
-![](images/nelsonsmall.png?raw=true)
+![](images/Nelsonsmall.png?raw=true)
  
 IOTA Hub tracks the amounts in each tailhash.  Notice tailhash, DDWY…9999, generated during the IOTA Hub deposit address sweep.
 
-![](images/nelsonlarge.png?raw=true)
+![](images/Nelsonlarge.png?raw=true)
 
 IOTA Hub tracks deposit addresses.  Notice:  Nelson’s ID is 9.  The yellow box highlights addresses associated with Nelson’s account
 
-![](images/nelsonhuge.png?raw=true)
+![](images/Nelsonhuge.png?raw=true)
 
