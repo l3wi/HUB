@@ -92,7 +92,8 @@ if (err) {
 })
 ```
 
-** Withdrawal transaction with tail hash **
+**Withdrawal transaction with tail hash**
+
 ```TAOIAXACMCWFYETKBHOTHNLNAZOWFORNAOKH9EIXVESLWBULGBKYRKUJLAQPKKNLISL9UHOXQESNLO999 confirmed```
 
 
