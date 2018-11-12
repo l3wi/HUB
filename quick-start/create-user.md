@@ -1,4 +1,4 @@
-# Quick Start - Create Hub User
+## Quick Start - Create Hub User
 
 IOTA Hub is a tool for managing transfers from/to addresses in a simple and secure manner.  In this example, PYOTA is used to create a new user with a deposit address.  This user receives iota then queries for the account balance.
 
