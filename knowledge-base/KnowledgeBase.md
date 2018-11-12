@@ -12,7 +12,7 @@ Hub relies on gRPC.  gRPC makes it possible for clients to use remote objects as
 
 Hub should be run in a closed network protected from malicious actors
 
-Hub components include:  Hub server, Signing server, Maria Database, and APIs (?)
+Hub components include:  Hub server, Signing server, Maria Database, and APIs
 
 ![](images/components.jpg?raw=true)
 
@@ -63,15 +63,17 @@ Additionally, Hub manages withdrawals.  Customers withdraw funds from exchanges 
 
 ### Hub Limitations
 
-Hub prevents re-use of deposit addresses internally BUT does not prevent users re-using deposit addresses after sweeps.  Users must take responsibility for retiring old addresses.
+Hub prevents re-use of deposit addresses internally BUT does not prevent users re-submitting deposit addresses after sweeps.  Users must take responsibility for retiring old addresses.
 
-It is ill-advised to attach children of multisig transactions to each other so this functionality does not exist
+It is ill-advised to attach children of multisig transactions to each other
  
 Cold storage has not been addressed
 
-**Are there plans to extend to product to overcome these limitations**
+
+**Are there plans to extend to product to overcome these limitations?**
 
 New features are driven from user requests
+
 
 **Are there other products that can overcome these limitations?**
 
