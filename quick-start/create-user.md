@@ -70,21 +70,22 @@ print(response)
 
 In the example, 50i was received.
 
-![](images/ddwiy.png?raw=true)
+![Screen capture confirming that 50i was received as described in the text](images/ddwiy.png?raw=true)
+
 
 Now, IOTA Hub takes over and automatically sweeps funds into exchange deposit addresses.  Hub also populates the user database with the user’s name and account information.  This allows the hub to control deposit address indexing and other processes for the safe and efficient currency exchanges.  Tailhash, DDWY…9999, highlighted in orange, will appear in the IOTA Hub database.
 
-![](images/lpedw.png?raw=true)
+![Screen capture confirming the tailhash as described in the text](images/lpedw.png?raw=true)
 
 Query IOTA Hub to view the new username, “Nelson”, and see the account balance of 50i.  Notice, Nelson’s ID is “9”.
 
-![](images/Nelsonsmall.png?raw=true)
+![Screen capture confirming that Nelson's ID is 9 as described in the text](images/Nelsonsmall.png?raw=true)
  
 IOTA Hub tracks the amounts in each tailhash.  Notice tailhash, DDWY…9999, generated during the IOTA Hub deposit address sweep.
 
-![](images/Nelsonlarge.png?raw=true)
+![Screen capture confirming the tailhash  as described in the text](images/Nelsonlarge.png?raw=true)
 
 IOTA Hub tracks deposit addresses.  Notice:  Nelson’s ID is 9.  The yellow box highlights addresses associated with Nelson’s account
 
-![](images/Nelsonhuge.png?raw=true)
+![Screen captur confirming that Nelson's ID is 9  as described in the text](images/Nelsonhuge.png?raw=true)
 
