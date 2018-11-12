@@ -1,51 +1,27 @@
-## Knowledge Base
+## Functions
 
-### Hub Architecture
-
-#### Language & Style
-
-Hub is written in C++ with clearly separated modules.  
-
-Hub relies on gRPC.  gRPC makes it possible for clients to use remote objects as if they were local.  A gRPC server implements a gRPC interface and handles client calls.  For more information see https://grpc.io/docs/guides/  Client code may be written in several languages, see: https://grpc.io/docs/
- 
-#### Environment Components	
-
-Hub should be run in a closed network protected from malicious actors
-
-Hub components include:  Hub server, Signing server, Maria Database, and APIs
-
-![Diagram showing the hub components  as described in the text](images/components.jpg?raw=true)
-
-#### Interacting with Hub 
-
-Users need tokens to interact with Hub
-
-Components interact through gRPC
-
-### Functions
-
-#### Generating Seeds
+### Generating Seeds
 When receiving a user deposit, the exchange can generate a secure seed for the user. Seeds must be securely generated and stored because a seed is used to derive a private key. Private keys are used to sign transactions.  Hub keeps track of seeds.
  
-#### Generating Deposit Addresses
+### Generating Deposit Addresses
 Once a secure seed has been generated, deposit addresses can be created.  It is critical to keep track of the address index.  Hub does this automatically
  
-#### User Deposit Address Management
+### User Deposit Address Management
 IOTA Hub has built-in deposit address management and security.  It ensures that exchanges assign each user a unique address for every deposit. This helps prevent address reuse thus better safeguarding funds. Hub can track whether key indices were already used as input for a previous transaction (i.e. swept from) and should no longer be available.
  
 IOTA Hub monitors that transactions are confirmed.
  
-#### Why Confirm Transactions?
+### Why Confirm Transactions?
 IOTA works differently than a traditional ledger. Traditional ledgers are generally managed by a trustworthy third-party, such as a bank or credit card company. With IOTA, there is no third-party, peers reach consensus regarding the trustworthiness of a transaction. When consensus is reached, the transaction is “confirmed”.
  
-#### Sweeps
+### Sweeps
 Behind the scenes, IOTA Hub is performing sweeps because the exchange only secures funds in unspent addresses. Otherwise, it is the user’s responsibility to secure their funds.
  
 Sweeps are crucial to securely crediting users after moving funds from their deposit addresses. Suppose, a user deposits to an already swept address, an adversary might try to forge a signature and move the funds out of this address; therefore, funds should be swept to your hot wallet periodically.
  
 Crediting should only be performed after confirming sweep transactions to make sure funds are in your possession.  You should absolutely inform the user of the risk of total loss should he send to a deposit address provided by the exchange more than once.
 
-#### How Sweeps Work
+### How Sweeps Work
 To perform a sweep, first, Hub scans deposit addresses for balances filtering out any addresses with zero value. Next, Hub checks whether deposit addresses are in any unresolved sweeps. To speed up the process, Hub keeps track of the indexes of deposit addresses.
  
 One seed many contain many deposit addresses that have already been processed. A sweep transfer will move balances from selected deposit addresses to unspent exchange-owned addresses.
@@ -58,42 +34,5 @@ After each successful deposit, Hub sends the tokens to hot wallets.  After stori
  
 Hub confirms sweep transactions were accepted by Tangle. To ensure secure deposit of funds to exchange addresses, check the inclusion states of the sweep transactions. Finally, Hub credits the user.
  
-Withdrawls
-Additionally, Hub manages withdrawals.  Customers withdraw funds from exchanges for various reasons. The exchange must make sure that deposit addresses used to transfer tokens do not have pending incoming transactions as a strict measure to prevent private key reuse.  Hub ensures that no value is being transferred to a deposit address.  Hub also makes sure that all previous incoming transactions are confirmed before sending a transfer.  Hub monitors withdrawal transactions and notifies users once withdrawal transaction has been confirmed.
-
-### Hub Limitations
-
-Hub prevents re-use of deposit addresses internally BUT does not prevent users re-submitting deposit addresses after sweeps.  Users must take responsibility for retiring old addresses.
-
-It is ill-advised to attach children of multisig transactions to each other
- 
-Cold storage has not been addressed
-
-
-**Are there plans to extend to product to overcome these limitations?**
-
-New features are driven from user requests
-
-
-**Are there other products that can overcome these limitations?**
-
-None, as of November 2018
-
-
-### Contributing Guidelines
-
-Contribution guidelines are posted on github at https://github.com/iotaledger/documentation/blob/master/CONTRIBUTING.md
-
-**Roadmap**
-
-IOTA Hub v1 is a stable release with all features addressed
-
-**Status**
-
-v1 Stable Release
-
-See https://github.com/iotaledger/rpchub/releases
-
-**Changelog**
-
-None
+### Withdrawls
+The Hub manages withdrawals. Customers withdraw funds from exchanges for various reasons. The exchange must make sure that deposit addresses used to transfer tokens do not have pending incoming transactions as a strict measure to prevent private key reuse.  Hub ensures that no value is being transferred to a deposit address.  Hub also makes sure that all previous incoming transactions are confirmed before sending a transfer.  Hub monitors withdrawal transactions and notifies users once withdrawal transaction has been confirmed.
