@@ -2,7 +2,7 @@
 
 ### Overview
 
-Considerations for quick starting IOTA Hub include:
+This section addresses considerations for quick starting IOTA Hub including:
 
 - Security
 - Installation
