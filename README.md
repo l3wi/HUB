@@ -1,11 +1,25 @@
 
-## Introduction
+#Hub Documentation
 
-### Overview
+The following files cover the IOTA rpcHub. They should provide the required info to understand and use the hub confidently.
 
-IOTA Hub is a multi-user-wallet used by those with custody of other’s tokens and those requiring the secure management of IOTA tokens.  Companies use Hub to manage the complicated tasks associated with deposits and withdrawals of Iota. 
+## Documentation
+- Introduction
+    - [Overview](introduction/overview.md)
+    - [Usecases](introduction/usecases.md)
+- Quick Start
+    - [Security](quick-start/security.md)
+    - [Simple Install](quick-start/simple-install.md)
+    - [Create User](quick-start/create-user.md)
+    - [Signing Server](quick-start/signing-server.md)
+- Knowledge Base
+    - [Hub Architecture](knowledge-base/hub-architecture.md)
+    - [Exchange Implementation](knowledge-base/exchange-implementation.md)
 
-Hub was developed with the security in mind and includes a number of options to protect tokens in the Hub.  It was decoupled from other IOTA products because Hub is a unique application that runs on top of our decentralized ledger, called the Tangle
+    - [Functions](knowledge-base/components.md)
+    - [Contribute](knowledge-base/contribute.md)
 
-### Use Case
-IOTA’s desire for easy trading of iota tokens prompted Hub development.  Hub is primarily for currency exchanges, but others may use Hub to automate account management
+## Required Changes:
+- Hub diagram in hub-architecture needs the signing server present
+- Add link to the create-user example's github. 
+- Reword the `components.md` file to be agnostic of exchanges
