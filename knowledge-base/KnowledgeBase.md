@@ -14,7 +14,7 @@ Hub should be run in a closed network protected from malicious actors
 
 Hub components include:  Hub server, Signing server, Maria Database, and APIs (?)
 
-![](images/Components.jpg?raw=true)
+![](images/components.jpg?raw=true)
 
 #### Interacting with Hub 
 
