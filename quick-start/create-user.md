@@ -1,6 +1,8 @@
 ## Quick Start - Create Hub User
 
-IOTA Hub is a tool for managing transfers from/to addresses in a simple and secure manner.  In this example, PYOTA is used to create a new user with a deposit address.  This user receives iota then queries for the account balance.
+IOTA Hub is a tool for managing transfers from/to addresses in a simple and secure manner.  
+
+In this example, PYOTA is used to create a new user with a deposit address.  This user receives iota then queries for the account balance.
 
 This example was tested Ubuntu 18.04 LTS Server running Python 3.6.5 with these prerequisites:
 ```
@@ -39,7 +41,7 @@ chan = grpc.insecure_channel('localhost:50051')
 stub = hub_pb2_grpc.HubStub(chan)
 ```
 
-Create a new user named, "Test.  A new deposit address was generated.  IncludeChecksum=True means that the address will contain the 81-tryte address plus the 9-tryte checksum for a total of 90-trytes.  
+Create a new user named, "Test".  A new deposit address was generated.  IncludeChecksum=True means that the address will contain the 81-tryte address plus the 9-tryte checksum for a total of 90-trytes.  
 
 ```
 # Create a new user and generate a deposit address

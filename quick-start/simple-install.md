@@ -1,10 +1,10 @@
-## Quick Start - Installation
+## Simple Hub Installation 
 
+This guide is an installation guide for the IOTA Hub. This will get the Hub running **without** the additional signing server. 
 
-Installation was tested using Ubuntu 18.04 LTS **Server** running on Oracle VirtualBox.
+> Installation was tested using Ubuntu 18.04 LTS **Server** running on Oracle VirtualBox.
 
-Note:  There are known errors attempting to install this on Ubuntu 18.04 LTS **Desktop**
-
+---
 
 ### Step 1: Installing Dependancies
 
@@ -102,6 +102,7 @@ Hub has quite a few settings.  For easier launch, these can be stored in a shell
 ```nano start.sh```
 
 First, set the "salt" parameter. Salt is used to generate more secure seeds.  Make sure the salt strings is longer than 20 characters.  Do not share your salt.
+
 Next, set the database name to "hub" and add the database user and password.  
 Set the apiAddress to the API address for your IOTA node
 For MainNet, set minWeightMagnitude to 14.  For DevNet use 9
