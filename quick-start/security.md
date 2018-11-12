@@ -1,16 +1,22 @@
 ## Quick Start - Security
 
-#### Environment
+
+### Environment
 Hub should run in a closed network protected from malicious actors
 
-#### Logs
+
+### Logs
 Hub has audit logs containing transaction data
 
-#### Deposit Addresses
+
+### Deposit Addresses
 For security purposes, deposit addresses may only be used once.  For transactions processed by IOTA Hub, this is controlled internally.   Hub conducts periodic “sweeps” to transfer funds from a user deposit address to a hot wallet to safeguard funds.      
 
-#### Hub and Signing Server
-To help prevent theft, IOTA Hub offers two servers:  hub and signing server.  Hub performs key functions for managing tasks associated with deposits and withdrawals of Iota.  The signing server stores key security data, UUID and salt.  These are used in the hashing algorithms that secure IOTA seeds and deposit addresses.  For maximum security, run the signing server in a remote location.  Therefore, if hub is compromised, malicious actors will lack sufficient data to easily decipher transactions and steal funds.  
+
+### Hub and Signing Server
+To help prevent theft, IOTA Hub offers two servers:  hub and signing server.  
+
+Hub performs key functions for managing tasks associated with deposits and withdrawals of Iota.  The signing server stores key security data, UUID and salt.  These are used in the hashing algorithms that secure IOTA seeds and deposit addresses.  For maximum security, run the signing server in a remote location.  Therefore, if hub is compromised, malicious actors will lack sufficient data to easily decipher transactions and steal funds.  
 
 UUID stands for Universally Unique IDentifier (UUID).  UUID is a 128-bit number used to identify information.  Salt is a random string that must be greater than 20 characters long.
 
