@@ -63,7 +63,7 @@ Sample Output:
     'HXDFFUGKOPZNRSSOOU9AZDIRVOTFMVSKJ9WECXGNTRKEPLCW9EX99KKONIDBAVHHNIFRYEAUSYQBMM9,
     'XVXCEJBNQBDHQDNFJRMACFHXVQTLFCWQHTSRZMUBBDPY9AWYVCHPAOLPVDFBDUGARQRX9ZLBWNOEG']
 
-### Monitoring Confirmation & Reattachment
+### Monitoring Confirmation
 
 Withdrawal transactions can be monitored and users notified when a withdrawal transaction has been confirmed. The following example utilizes getLatestInclusion() to check for confirmed transactions.
 
