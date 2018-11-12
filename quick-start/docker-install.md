@@ -37,7 +37,7 @@ Install the final dependency, pyparsing
 ```sudo apt-get install python-pyparsing```
 
 
-### Step 2: Installing the Satabase
+### Step 2: Installing the Database
 
 IOTA Hub uses MariaDB 10.2.1+ to store users, addresses, balances, etc.
 MariaDB is not pre-loaded on Ubuntu 18.04 LTS Server.  To install, first add a GPG key for the MariaDB repository
