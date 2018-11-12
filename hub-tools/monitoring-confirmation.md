@@ -36,4 +36,4 @@ if (err) {
 
 Screen Capture showing the confirmed bundle
 
-![](images/TXconfirm.png?raw=true)
+![screen capture showing the confirmed bundle for the withdrawal transaction tail hash in the text](images/TXconfirm.png?raw=true)
