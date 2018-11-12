@@ -84,8 +84,16 @@ None, as of November 2018
 
 Contribution guidelines are posted on github at https://github.com/iotaledger/documentation/blob/master/CONTRIBUTING.md
 
-Roadmap
+**Roadmap**
 
-Status
+IOTA Hub v1 is a stable release with all features addressed
 
-Changelog
+**Status**
+
+v1 Stable Release
+
+See https://github.com/iotaledger/rpchub/releases
+
+**Changelog**
+
+None
