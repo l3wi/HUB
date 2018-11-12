@@ -1,16 +1,16 @@
-## Quick Start
-### Security
+## Quick Start - Security
 
+#### Environment
 Hub should run in a closed network protected from malicious actors
 
+#### Logs
 Hub has audit logs containing transaction data
 
-For security purposes, Iota deposit addresses may only be used once.  For transactions processed by Hub, this is controlled internally. 
-
-Funds should be safeguarded in hot wallets or cold storage.  Hub conducts “sweeps” periodically to transfer funds from a user deposit address to a hot wallet for safekeeping.    
+#### Deposit Addresses
+For security purposes, Iota deposit addresses may only be used once.  For transactions processed by Hub, this is controlled internally.   Hub conducts periodic “sweeps” to transfer funds from a user deposit address to a hot wallet to safeguard funds.      
 
 #### Hub and Signing Server
-To help prevent theft, Hub offers two servers:  hub and signing server.  For maximum security, run the signing server in a remote location because it stores the UUID and salt used in the hashing algorithms that secure seeds and deposit addresses.
+To help prevent theft, Hub offers two servers:  hub and signing server.  Signing server stores the UUID and salt used in the hashing algorithms that secure seeds and deposit addresses.  For maximum security, run the signing server in a remote location.  
 
 UUID stands for Universally Unique IDentifier (UUID).  UUID is a 128-bit number used to identify information.
 
