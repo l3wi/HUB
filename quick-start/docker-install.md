@@ -1,10 +1,12 @@
 ## Quick Start - Installation
 
+
 Installation was tested using Ubuntu 18.04 LTS **Server** running on Oracle VirtualBox.
 
 Note:  There are known errors attempting to install this on Ubuntu 18.04 LTS **Desktop**
 
-#### Step 1: Installing dependancies
+
+### Step 1: Installing Dependancies
 
 First update the server
 
@@ -34,7 +36,8 @@ Install the final dependency, pyparsing
 
 ```sudo apt-get install python-pyparsing```
 
-#### Step 2: Installing the database
+
+### Step 2: Installing the Satabase
 
 IOTA Hub uses MariaDB 10.2.1+ to store users, addresses, balances, etc.
 MariaDB is not pre-loaded on Ubuntu 18.04 LTS Server.  To install, first add a GPG key for the MariaDB repository
@@ -59,7 +62,8 @@ Check that the database version is higher than the minimum required of 10.2.1
 
 ```mysql --version```
 
-#### Step 3: Building the Hub
+
+### Step 3: Building the Hub
 
 Clone the source code from GitHub repository
 
@@ -75,7 +79,8 @@ Build the Hub from source
 
 Check that the build completed successfully
 
-#### Step 4: Setting up the database
+
+### Step 4: Setting up the Database
 
 Create the hub database and add the schema and triggers
 
@@ -89,7 +94,8 @@ Import the database triggers
 
 ```mysql -h127.0.0.1 -uroot -pmyrootpassword hub < schema/triggers.mariadb.sql```
 
-#### Step 5: Running the Hub
+
+### Step 5: Running the Hub
 
 Hub has quite a few settings.  For easier launch, these can be stored in a shell script. 
 
