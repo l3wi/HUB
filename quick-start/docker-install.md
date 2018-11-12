@@ -1,6 +1,4 @@
-## Quick Start
-
-### Installation
+## Quick Start - Installation
 
 Installation was tested using Ubuntu 18.04 LTS **Server** running on Oracle VirtualBox.
 
