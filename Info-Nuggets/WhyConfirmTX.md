@@ -8,24 +8,25 @@ It is possible for Bob to, simultaneously, send as many transactions as he wants
 
 ![](images/Ledger-Trad.png?raw=true)
 
-GitHub Logo Account Balances are kept in the account. Transactions may be issued simultaneously
+**Account Balances are kept in the account. Transactions may be issued simultaneously**
 
 #### IOTA Ledger
 
 In this example, Bob starts with 10i in his seed. He sends a zero value transaction which attaches the address, “FMHZ…” to this seed. Bob wants to send Alice 1i so he contacted her and obtained her deposit address of YCIR…
+
 Bob sends 1i to Alice. This transaction is confirmed. A new address “NAMK…” is generated for Bob containing his remaining 9i. Address “FMHZ…” is archived. It may no longer be used.
+
+Now, Bob sends another transaction from his new address, “NAMK…” This transaction is also confirmed and a new address, “EHUE…” is generated. However, when Bob attempts to send the final transaction, he receives an insufficient funds message because “EHUE…” has only 1i and Bob attempted to send 3i. By only sending one transaction at a time, Bob cannot over spend.
 
 ![](images/Ledger-IOTA.png?raw=true)
 
-Now, Bob sends another transaction from his new address, “NAMK…” This transaction is also confirmed and a new address, “EHUE…” is generated. However, when Bob attempts to send the final transaction, he receives an insufficient funds message because “EHUE…” has only 1i and Bob attempted to send 3i. By only sending one transaction at a time, Bob cannot over spend.
-GitHub Logo Balance kept in deposit address. One transaction at a time.
+**Balance kept in deposit address. One transaction at a time.**
 
 This bundle shows the details of Bob’s first transaction where he sent 1i to Alice’s address, “YCIR…”. Bob’s original deposit address, “FHMZ…” is archived. It can no longer be used. Bob gets a new deposit address, “NAMK…” with his new balance of 9i. The bundle also shows that “FHMZ…” was attached to the Tangle via a zero balance transaction.
-GitHub Logo
-
-This serialization of transactions provides the concurrence and cybersecurity necessary to ensure trustworthy transactions. It also emphasizes the need to manage deposit addresses and monitor transactions.
 
 ![](images/Ledger-Bundle.png?raw=true)
+
+This serialization of transactions provides the concurrence and cybersecurity necessary to ensure trustworthy transactions. It also emphasizes the need to manage deposit addresses and monitor transactions.
 
 **WARNING**
 
